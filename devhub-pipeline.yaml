@@ -1,6 +1,9 @@
 version: v1
 productName: GoHelloWorld
 buildEnvVars:
+  - key: LANG
+    kind: config
+    value: C.UTF-8
   - key: LC_ALL
     kind: config
     value: C.UTF-8
@@ -10,9 +13,6 @@ buildEnvVars:
   - key: PATH
     kind: config
     value: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/go1.14/bin
-  - key: LANG
-    kind: config
-    value: C.UTF-8
   - key: PIPELINE_INIT_COMMAND
     kind: config
     value: echo 'No init commands provided'
